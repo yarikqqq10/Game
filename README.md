@@ -6,7 +6,7 @@
 - Делайте как в этом гайде 
 https://www.construct.net/en/forum/construct-2/how-do-i-18/open-project-lower-version-103062
 
-Последнее видео: https://www.youtube.com/watch?v=YlJf0qOlvWI
+Последнее видео: https://www.youtube.com/watch?v=zVWrYOhNnGE
 
 Youtube канал: https://www.youtube.com/@yarik1066
 
