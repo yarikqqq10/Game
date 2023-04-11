@@ -1,0 +1,1176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Game2</name>
+    <description></description>
+    <version>1.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id></app-id>
+    <unique-id>3k8y8jenijj4j</unique-id>
+    <saved-with-version>23900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="Timer" version="1">Timer</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>500</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">No</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Scale inner</prop>
+        <prop name="Hide address bar">No</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Preview browser">NW.js</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use iOS retina display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Player" sid="847697085239269">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="550470477976599">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="389978035371806">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="960452720944432">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="502602994463751">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="233531634003389" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Player1.png">
+                        <image-point name="ShootPoint" x="0.5" y="0.5" />
+                        <collision-poly>
+                            <point x="0.125" y="0.125" />
+                            <point x="0.875" y="0.125" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.125" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="1" name="Walk" pingpong="0" repeatcount="1" repeatto="0" sid="644350184692074" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Player1.png">
+                        <collision-poly>
+                            <point x="0.128125" y="0.126667" />
+                            <point x="0.878125" y="0.126667" />
+                            <point x="0.878125" y="0.873333" />
+                            <point x="0.128125" y="0.873333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Player1.2.png">
+                        <collision-poly>
+                            <point x="0.128125" y="0.126667" />
+                            <point x="0.878125" y="0.126667" />
+                            <point x="0.878125" y="0.873333" />
+                            <point x="0.128125" y="0.873333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Back" sid="971607418665262">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Floor1.png" />
+        </object-type>
+        <object-type name="Mouse" sid="535107178987149">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="778137918792593">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Player2" sid="999946628464440">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="875792508344036">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="220410862662307" speed="0">
+                    <frame duration="1" hotspotX="0.245946" hotspotY="0.529412" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Player2.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.529412" />
+                        <collision-poly>
+                            <point x="0.0465116" y="0.125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.860465" y="0.375" />
+                            <point x="0.837209" y="0.5" />
+                            <point x="0.860465" y="0.625" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.0465116" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="11" loop="0" name="Fist" pingpong="0" repeatcount="1" repeatto="0" sid="534096808295091" speed="8">
+                    <frame duration="1" hotspotX="0.232558" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.860465" y="0.5" />
+                        <collision-poly>
+                            <point x="0.0465116" y="0.125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.860465" y="0.375" />
+                            <point x="0.837209" y="0.5" />
+                            <point x="0.860465" y="0.625" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.0465116" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.232558" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.860465" y="0.5" />
+                        <collision-poly>
+                            <point x="0.0465116" y="0.125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.860465" y="0.375" />
+                            <point x="0.837209" y="0.5" />
+                            <point x="0.860465" y="0.625" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.0465116" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.232558" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.860465" y="0.5" />
+                        <collision-poly>
+                            <point x="0.0465116" y="0.125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.860465" y="0.375" />
+                            <point x="0.837209" y="0.5" />
+                            <point x="0.860465" y="0.625" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.0465116" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.232558" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.860465" y="0.5" />
+                        <collision-poly>
+                            <point x="0.0465116" y="0.125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.860465" y="0.375" />
+                            <point x="0.837209" y="0.5" />
+                            <point x="0.860465" y="0.625" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.0465116" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.232558" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.860465" y="0.5" />
+                        <collision-poly>
+                            <point x="0.0465116" y="0.125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.860465" y="0.375" />
+                            <point x="0.837209" y="0.5" />
+                            <point x="0.860465" y="0.625" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.0465116" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.232558" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.860465" y="0.5" />
+                        <collision-poly>
+                            <point x="0.0465116" y="0.125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.860465" y="0.375" />
+                            <point x="0.837209" y="0.5" />
+                            <point x="0.860465" y="0.625" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.0465116" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.232558" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.860465" y="0.5" />
+                        <collision-poly>
+                            <point x="0.0465116" y="0.125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.860465" y="0.375" />
+                            <point x="0.837209" y="0.5" />
+                            <point x="0.860465" y="0.625" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.0465116" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.232558" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.860465" y="0.5" />
+                        <collision-poly>
+                            <point x="0.0465116" y="0.125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.860465" y="0.375" />
+                            <point x="0.837209" y="0.5" />
+                            <point x="0.860465" y="0.625" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.0465116" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.232558" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.860465" y="0.5" />
+                        <collision-poly>
+                            <point x="0.0465116" y="0.125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.860465" y="0.375" />
+                            <point x="0.837209" y="0.5" />
+                            <point x="0.860465" y="0.625" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.0465116" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.232558" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.860465" y="0.5" />
+                        <collision-poly>
+                            <point x="0.0465116" y="0.125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.860465" y="0.375" />
+                            <point x="0.837209" y="0.5" />
+                            <point x="0.860465" y="0.625" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.0465116" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.232558" hotspotY="0.5">
+                        <image-point name="Imagepoint 1" x="0.860465" y="0.5" />
+                        <collision-poly>
+                            <point x="0.0465116" y="0.125" />
+                            <point x="0.5" y="0.125" />
+                            <point x="0.860465" y="0.375" />
+                            <point x="0.837209" y="0.5" />
+                            <point x="0.860465" y="0.625" />
+                            <point x="0.5" y="0.875" />
+                            <point x="0.0465116" y="0.875" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Blocks" sid="314649813784009">
+            <plugin id="Tilemap" />
+            <behaviors>
+                <behavior-type name="Solid" sid="193504742495352">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Blocks.png" />
+            <tiles />
+        </object-type>
+        <object-type name="Stats" sid="338703996675739">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="509878753671564" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stats\Stats5.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.967742" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.967742" y="0.9375" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stats\Stats4.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.967742" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.967742" y="0.9375" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stats\Stats3.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.967742" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.967742" y="0.9375" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stats\Stats2.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.967742" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.967742" y="0.9375" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stats\Stats1.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.967742" y="0.0625" />
+                            <point x="1" y="0.5" />
+                            <point x="0.967742" y="0.9375" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Battery" sid="310537038559739">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="784966805541296" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.605" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Battery.png">
+                        <collision-poly>
+                            <point x="0.065" y="0.215" />
+                            <point x="0.93" y="0.205" />
+                            <point x="0.93" y="0.985" />
+                            <point x="0.08" y="0.975" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Shoot" sid="733717062057813">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="213381269553246">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173232996221863" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Shoot.png">
+                        <image-point name="Imagepoint 1" x="1" y="0.5" />
+                        <collision-poly>
+                            <point x="0.3125" y="0.332031" />
+                            <point x="0.5" y="0.259766" />
+                            <point x="0.691406" y="0.316406" />
+                            <point x="0.777344" y="0.507813" />
+                            <point x="0.683594" y="0.703125" />
+                            <point x="0.513672" y="0.773438" />
+                            <point x="0.3125" y="0.6875" />
+                            <point x="0.25" y="0.519531" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BLOCK" sid="506840145538717">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="LVL" sid="749821317494965" type="number" />
+                <instance-variable name="Destroyed" sid="741543341254262" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="743104940079034">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="414277807739761" speed="10">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\BLOCK2\BLOCK2.0.PNG">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\BLOCK2\BLOCK2.1.PNG">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\BLOCK2\BLOCK2.2.PNG">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\BLOCK2\BLOCK2.3.PNG">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\BLOCK2\BLOCK2.4.PNG">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\BLOCK2\BLOCK2.5.PNG">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Powe" sid="701798406391856">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="765051933794795" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Powe2.png">
+                        <collision-poly>
+                            <point x="0.113889" y="0.0777778" />
+                            <point x="0.872223" y="0.0777778" />
+                            <point x="0.872223" y="0.911112" />
+                            <point x="0.113889" y="0.911112" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="STAT2" sid="164871503407367">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="197885058345323" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="1.00984" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stat2\Stats2.0.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1.00984" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stat2\Stats2.1.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1.00984" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stat2\Stats2.2.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1.00984" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stat2\Stats2.3.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1.00984" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stat2\Stats2.4.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1.00984" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stat2\Stats2.5.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1.00984" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stat2\Stats2.6.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1.00984" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stat2\Stats2.7.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1.00984" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stat2\Stats2.8.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1.00984" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stat2\Stats2.9.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1.00984" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stat2\Stats2.10.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="turrel" sid="789916454729844">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Turret" sid="288550742640546">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Fade" sid="776610828416520">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="302774691324726">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="940845630072410" speed="5">
+                    <frame duration="1" hotspotX="0.339474" hotspotY="0.492308" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\turrel\турель1.png">
+                        <image-point name="Imagepoint 1" x="1.05526" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.339474" hotspotY="0.492308" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\turrel\турель2 — копия.png">
+                        <image-point name="Imagepoint 1" x="1.05526" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.339474" hotspotY="0.492308" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\turrel\турель3.png">
+                        <image-point name="Imagepoint 1" x="1.05526" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.339474" hotspotY="0.492308" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\turrel\турель4.png">
+                        <image-point name="Imagepoint 1" x="1.05526" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0.339474" hotspotY="0.492308" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\turrel\турель5.png">
+                        <image-point name="Imagepoint 1" x="1.05526" y="0.5" />
+                    </frame>
+                </animation>
+                <animation framecount="7" loop="0" name="death" pingpong="0" repeatcount="1" repeatto="0" sid="306883394370076" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\turrel\турельC6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\turrel\турельC7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\turrel\турельC8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\turrel\турельC9.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\turrel\турельC10.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\turrel\турельC11.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Shoot2" sid="864211963110930">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="parry" sid="675886791629614" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="604728545180946">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="705439574948967" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Shoot2.png">
+                        <collision-poly>
+                            <point x="0.308594" y="0.316406" />
+                            <point x="0.5" y="0.246094" />
+                            <point x="0.6875" y="0.324219" />
+                            <point x="0.753906" y="0.503906" />
+                            <point x="0.679688" y="0.664063" />
+                            <point x="0.496094" y="0.757812" />
+                            <point x="0.308594" y="0.675781" />
+                            <point x="0.238281" y="0.492188" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Shoot2.2.png">
+                        <collision-poly>
+                            <point x="0.38125" y="0.21875" />
+                            <point x="0.6875" y="0.25" />
+                            <point x="0.8125" y="0.5" />
+                            <point x="0.6625" y="0.73125" />
+                            <point x="0.375" y="0.74375" />
+                            <point x="0.253125" y="0.4875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Upgrade" sid="205170999034975">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="441373405714071">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="240035322886372" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Upgrade1.png">
+                        <collision-poly>
+                            <point x="0.09375" y="0.09375" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.90625" y="0.09375" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Upgrade2" sid="873080737965429">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="596440040478886">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="694556910029701" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Upgrade2.png">
+                        <collision-poly>
+                            <point x="0.09375" y="0.09375" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.90625" y="0.09375" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.875" y="0.875" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.125" y="0.875" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="turrel2" sid="643479159148273">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Turret" sid="517554961517880">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="689733743292995">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="859692970720951">
+                    <behavior id="LOS" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="824247851010567" speed="5">
+                    <frame duration="1" hotspotX="0.289474" hotspotY="0.518519" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\турель2.png">
+                        <image-point name="Imagepoint 1" x="1.00263" y="0.522222" />
+                        <collision-poly>
+                            <point x="0.0789474" y="0.111111" />
+                            <point x="0.5" y="0.037037" />
+                            <point x="0.710526" y="0.407407" />
+                            <point x="1" y="0.481481" />
+                            <point x="0.736842" y="0.62963" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0526316" y="0.925926" />
+                            <point x="0" y="0.481481" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Shoot3" sid="372654194896651">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="708667956063014">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="850999445686661" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Shoot2.png">
+                        <collision-poly>
+                            <point x="0.246094" y="0.253906" />
+                            <point x="0.492188" y="0.15625" />
+                            <point x="0.765625" y="0.234375" />
+                            <point x="0.855469" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.511719" y="0.851562" />
+                            <point x="0.25" y="0.746094" />
+                            <point x="0.144531" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Check" sid="315977911859031">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Checkpoint" sid="680523270398054" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" sid="140926983690324" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Check1.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Check2.png">
+                        <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Saw" sid="223318361935441">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="OffOn" sid="693398989151059" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Rotate" sid="995493453100907">
+                    <behavior id="Rotate" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="671436098659865">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="911291927093983" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\SAWOFF.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.2" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.8" y="0.2" />
+                            <point x="0.95" y="0.5" />
+                            <point x="0.8" y="0.8" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.2" y="0.8" />
+                            <point x="0.05" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\SAW (22).png">
+                        <collision-poly>
+                            <point x="0.2" y="0.2" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.8" y="0.2" />
+                            <point x="0.95" y="0.5" />
+                            <point x="0.8" y="0.8" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.2" y="0.8" />
+                            <point x="0.05" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="884718577533736">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Teleport" sid="930970330237084">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="540006330825531" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.117188" y="0.0859375" />
+                            <point x="0.875" y="0.0859375" />
+                            <point x="0.875" y="0.9375" />
+                            <point x="0.117188" y="0.9375" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Teleport2" sid="314060562749025">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="962036897792909" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FOG" sid="533314951613155">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="270817859214554">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="228391150144184" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FOG2" sid="768347807073898">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="407916742864749" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FOG3" sid="726329319201152">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="853622908431557" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Path" sid="367462459808951">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Pin" sid="631045371992233">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Stats\Stats4.png" />
+        </object-type>
+        <object-type name="Burn" sid="294450614233752">
+            <plugin id="Particles" />
+            <behaviors>
+                <behavior-type name="Pin" sid="429082770901715">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="Fire" sid="451606296893883">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="774063392327454" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1.004" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SAWOFF" sid="619987433442439">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="926786058476588">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="448174141825595" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\SAWOFF.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.2" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.8" y="0.2" />
+                            <point x="0.95" y="0.5" />
+                            <point x="0.8" y="0.8" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.2" y="0.8" />
+                            <point x="0.05" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\SAWOFF2.png">
+                        <collision-poly>
+                            <point x="0.2" y="0.2" />
+                            <point x="0.5" y="0.05" />
+                            <point x="0.8" y="0.2" />
+                            <point x="0.95" y="0.5" />
+                            <point x="0.8" y="0.8" />
+                            <point x="0.5" y="0.95" />
+                            <point x="0.2" y="0.8" />
+                            <point x="0.05" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LIGHT" sid="977770829614483">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="349249992470931" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LASER" sid="368128449869974">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="233511028895409">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="955860703624339" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Laser2.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.859375" y="0" />
+                            <point x="0.859375" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LASERA" sid="309996391075773">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="941387791640503">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="330852440167265" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\LaserA.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LaserB" sid="895164558583269">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Door" sid="961609731936566" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Sine" sid="541594946561749">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="517430718038047" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\LaserB.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Button" sid="265373781798187">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Key" sid="157164053489953" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="289879155015078">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="726049917634087" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\button1.png">
+                        <collision-poly>
+                            <point x="0.425" y="0.10625" />
+                            <point x="0.687499" y="0.10625" />
+                            <point x="0.681249" y="0.862499" />
+                            <point x="0.41875" y="0.862499" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\button2.png">
+                        <collision-poly>
+                            <point x="0.675" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.675" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door1" sid="627499850976565">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Key" sid="570774587313114" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="112835529607526">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="642997910194465" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Door0.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Door1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fist" sid="851669419818457">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="202949891323066">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="109256550847989" speed="5">
+                    <frame duration="1" hotspotX="0.318919" hotspotY="0.535294" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\Fist\F0.png">
+                        <collision-poly>
+                            <point x="0.162162" y="0.352941" />
+                            <point x="0.5" y="0.176471" />
+                            <point x="0.864865" y="0.294118" />
+                            <point x="0.972973" y="0.5" />
+                            <point x="0.918919" y="0.823529" />
+                            <point x="0.5" y="0.882353" />
+                            <point x="0.135135" y="0.705882" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MOB" sid="806477713553104">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="153293054563309">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Car" sid="496315864856046">
+                    <behavior id="Car" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="127082392148148" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Yaroslav\Desktop\Важные папки\Объекты2\MOB.png">
+                        <collision-poly>
+                            <point x="0.0941177" y="0.0735294" />
+                            <point x="0.908823" y="0.0735294" />
+                            <point x="0.908823" y="0.917647" />
+                            <point x="0.0941177" y="0.917647" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DoorOFF1" sid="532874247253411">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="783262725486803">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="629439980713207" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\DoorOFF.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DoorOFF2" sid="293665028912108">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="622545425305231" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\DoorOFF.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="DoorOFF3" sid="400349558460912">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="591593602880672" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\DoorOFF.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Door2" sid="343105418428217">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="216496815808053" speed="0">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Door0.png" />
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Door1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Went" sid="993510495176980">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396927848350737" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Went.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pit" sid="324558208956331">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="926215917604810">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="228228783554660" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pit2" sid="534376808230325">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="153333804344367">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="820696341796053" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\Floor2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Dust1" sid="164848368930348">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="Dust2" sid="493035914594760">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="CheckPartic" sid="332164547782591">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="HpPartic" sid="550433917213783">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="AmmoPartic" sid="869898573882040">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="ParryPartic" sid="559751418528951">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="Pain" sid="214757680097114">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="TV" sid="236011028096685">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Number" sid="535567669712414" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="171926695998496" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\ClueN2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\ClueN1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TvClue1" sid="751684718838426">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="285425829029789">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="948003461989591" speed="5">
+                    <frame duration="1" hotspotX="0.505376" hotspotY="0.509091" original-source="C:\Users\YAREK\Desktop\ИГРА\Объекты2\ClueN4.1.png">
+                        <collision-poly>
+                            <point x="0.0537634" y="0.0909091" />
+                            <point x="0.494624" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.490909" />
+                            <point x="0.946237" y="0.909091" />
+                            <point x="0.494624" y="0.909091" />
+                            <point x="0" y="1" />
+                            <point x="0.0537634" y="0.490909" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="503008419589496">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Timer" sid="983872675546783">
+                    <behavior id="Timer" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="End" sid="240011932595184">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="251483341646886" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="1.004" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="16" />
+        <global-instance type="Keyboard" uid="17" />
+        <global-instance type="Audio" uid="330">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>None</saveload>
+                <play-in-background>Yes</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="check.ogg" />
+        <file name="HP UP.ogg" />
+        <file name="bullet123.ogg" />
+        <file name="metal.ogg" />
+        <file name="teleport.ogg" />
+        <file name="bomb.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="2020-03-22_-_A_Bit_Of_Hope_-_David_Fesliyan.ogg" />
+        <file name="2021-08-16_-_8_Bit_Adventure_-_www.FesliyanStudios.com.ogg" />
+        <file name="2021-10-19_-_Funny_Bit_-_www.FesliyanStudios.com.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
